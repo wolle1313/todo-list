@@ -1,0 +1,258 @@
+body {
+  background-image: url("./pics/bgc.jpg");
+  min-height: 100%;
+}
+.wrapper {
+  font-family: "Roboto", sans-serif;
+  max-width: 1024px;
+  margin: 100px auto 0 auto;
+  background-color: rgb(46, 46, 46, 0.4);
+  color: orange;
+  padding: 20px;
+  border-radius: 20px;
+}
+button {
+  cursor: pointer;
+}
+#intro {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 2px solid darkgreen;
+}
+.inputs div {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.inputs div label {
+  font-size: 23px;
+  margin-right: 20px;
+  display: inline-block;
+  width: 170px;
+  text-align: right;
+}
+.inputs div input,
+.inputs div textarea {
+  height: 30px;
+  font-size: 23px;
+  border: none;
+  background-color: rgb(39, 39, 39);
+  color: goldenrod;
+  text-align: center;
+  width: 300px;
+}
+#checkPrio input {
+  margin-right: 10px;
+  width: 20px;
+}
+#checkPrio label {
+  text-align: left;
+  line-height: 37px;
+}
+#descriptionInput {
+  height: 120px;
+  margin-bottom: 10px;
+}
+#descriptionInput textarea {
+  resize: none;
+  height: 100px;
+  font-size: 20px;
+}
+.inputs button {
+  padding: 15px 30px;
+  width: 300px;
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.currentTasks,
+.pastTasks {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+.task.pastTask {
+  height: 150px;
+}
+.pastTasks div {
+  font-size: 11px;
+}
+.pastTasks div h1 {
+  font-size: 30px;
+}
+.tasks div h1 {
+  width: 100%;
+  display: block;
+}
+.taskTitle {
+  color: greenyellow;
+  font-size: 50px;
+}
+.task {
+  background-color: rgb(46, 46, 46, 0.7);
+  width: 300px;
+  height: 220px;
+  border-radius: 20px;
+  padding: 10px 50px;
+  margin: 50px 0;
+  position: relative;
+  border-top-right-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.pastTasks {
+  border-top: 2px solid purple;
+}
+.task * {
+  margin: 10px 0;
+}
+.task .removeTask {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+.task h1 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.task h3 {
+  font-size: 18px;
+  font-weight: normal;
+  max-width: 300px;
+  height: 60px;
+}
+.task .todo {
+  font-size: 17px;
+}
+.task .important {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: red;
+}
+.task button {
+  padding: 10px 15px;
+  font-size: 20px;
+  transition: background-color 0.1s linear;
+}
+.task button:hover {
+  background-color: rgb(226, 205, 253);
+  border: none;
+  padding: 12px 17px;
+}
+.error {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  color: red;
+  text-align: center;
+}
+#selectTask {
+  line-height: 40px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#selectTask div {
+  width: 300px;
+}
+#selectTask div select {
+  width: 150px;
+  font-size: 23px;
+  border: none;
+  background-color: rgb(39, 39, 39);
+  color: goldenrod;
+  padding-left: 10px;
+}
+.category {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+.osobiste {
+  color: lightgreen;
+}
+.praca {
+  color: darkturquoise;
+}
+.dom {
+  color: burlywood;
+}
+.task.imp {
+  background-color: rgba(90, 62, 62, 0.7);
+}
+
+.sorts {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+  top: 50px;
+  left: 11vw;
+  border: 2px solid black;
+  width: 180px;
+  height: 100px;
+  background-color: rgb(31, 58, 54, 0.4);
+}
+.sorts button {
+  color: white;
+  background-color: black;
+  border: 1px solid orangered;
+  padding: 7px 15px;
+}
+.sorts h3 {
+  display: block;
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.sorts .clicked,
+.menuSort div.clicked {
+  background-color: #fff;
+  color: black;
+}
+.menuSort {
+  position: absolute;
+  top: 87%;
+  left: 42.5%;
+  display: none;
+}
+.menuSort div {
+  color: white;
+  background-color: black;
+  border: 1px solid orangered;
+  padding: 7px 15px;
+  cursor: pointer;
+  transition: bacground-color 0.3 linear;
+}
+.sortBy:hover + .menuSort,
+.menuSort:hover {
+  display: block;
+}
+.menuSort div:hover {
+  background-color: rgb(43, 43, 43);
+}

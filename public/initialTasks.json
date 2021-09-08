@@ -1,0 +1,74 @@
+[
+     {
+      "id": 0,
+      "name": "Wyjście z psem",
+      "date": "2021-10-15T15:00",
+      "category": "osobiste",
+      "important": false,
+      "description": "Zastąpić Jarka w wyjściu z psem"
+    },
+    {
+      "id": 1,
+      "name": "Odebrać Jsona",
+      "date": "2021-10-14T17:30",
+      "category": "praca",
+      "important": false,
+      "description": "Json nie ma auta"
+    },
+    {
+      "id": 2,
+      "name": "Ślub J & S",
+      "date": "2021-10-12T12:00",
+      "category": "osobiste",
+      "important": true,
+      "description": "Pamiętaj wziąć koszulę na zmianę"
+    },
+    {
+      "id": 3,
+      "name": "Zamówić hydraulika",
+      "date": "2021-09-30T19:00",
+      "category": "dom",
+      "important": false,
+      "description": "Fetch się czasem zapycha, potrzeba specjalisty"
+    },
+    {
+      "id": 4,
+      "name": "Kupić nowe krzesło gamingowe",
+      "date": "2021-12-30T00:00",
+      "category": "dom",
+      "important": false,
+      "description": ""
+    },
+    {
+      "id": 5,
+      "name": "posprzątać ciastka",
+      "date": "2021-10-15T17:25",
+      "category": "dom",
+      "important": false,
+      "description": "Nie wiem skąd się one biorą, ja nawet nie jem ciastek a są poukrywane wszędzie"
+    },
+    {
+      "id": 6,
+      "name": "Poprosić o podwyżkę",
+      "date": "2021-11-30T19:00",
+      "category": "praca",
+      "important": true,
+      "description": "Szef nie proponował mi podwyżki od dawna :)"
+    },
+    {
+      "id": 7,
+      "name": "Pójść do lekarza",
+      "date": "2021-10-30T19:00",
+      "category": "osobiste",
+      "important": true,
+      "description": "Trzeba zobaczyć czemu burczy w brzuchu"
+    },
+    {
+      "id": 8,
+      "name": "Kupić chińczyka",
+      "date": "2021-09-15T14:23",
+      "category": "osobiste",
+      "important": true,
+      "description": "W sensie jedzenia*"
+    }
+  ]
